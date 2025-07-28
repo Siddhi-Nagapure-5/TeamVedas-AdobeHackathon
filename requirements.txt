@@ -1,0 +1,8 @@
+PyMuPDF
+pytesseract
+Pillow
+opencv-python
+numpy
+joblib
+xgboost>=1.7.0
+ 
