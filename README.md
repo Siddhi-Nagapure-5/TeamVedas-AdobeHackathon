@@ -21,17 +21,19 @@ Our solution is:
 
 ## 🚀 Dockerized Execution
 
+### Run the Image
+```bash
+docker run -p 8000:8000 imagename
+```
+
 ### Build the Image
 ```bash
-docker build --platform linux/amd64 -t heading-extractor .
+docker build -t your_image_name_here .
 ```
 
 ### Run the Container
 ```bash
-docker run --rm \
-  -v $(pwd)/sample_dataset/pdfs:/app/sample_dataset/pdfs \
-  -v $(pwd)/sample_dataset/outputs:/app/sample_dataset/outputs \
-  --network none heading-extractor
+docker run -p 8000:8000 image_name_here
 ```
 
 - 📂 **Input Directory**: `/app/sample_dataset/pdfs`
